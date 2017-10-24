@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="gnomon.js"></script>
+
+        <title>Log | phse.net</title>
+    </head>
+    <body>
+        <div id="wrap">
+
+            <div id="header">
+                <svg id="gnomon-logo" viewBox="0 0 64 64">
+                    <circle fill="#e8e8e8" cx="32" cy="32" r="32" />
+                    <path fill="none" stroke="#555" stroke-width="1.5" d="M15.5,14.5l36.5,31H19c0,0,10-3,10-9.3S15.5,19,15.5,19V14.5z"/>
+                </svg>
+                <div id="gnomon-title">
+                    gnomon
+                </div>
+            </div>
+
+            <div class = "segment">
+                <table id="stats">
+                    <tr><td colspan="2">Active Sectors</td></tr>
+                </table>
+                <span class="hint">Most influencial sectors for the week's activities</span>
+            </div>
+
+            <div class = "segment">
+                <table id = "log">
+                    <tr>
+                        <td>Date</td>
+                        <td>Project</td>
+                        <td>Task</td>
+                        <td>Hours</td>
+                    </tr>
+                </table>
+                <span class="hint">Entries from the past 7 days</span>
+            </div>
+
+        </div>
+
+        <!-- Load the google sheet -->
+        <script src="https://spreadsheets.google.com/feeds/list/1P8aGlR3FT4K2huaptVI7F4WIYTKZFbJ3AXTzfgv-Yfs/1/public/values?alt=json-in-script&callback=doData"></script>
+
+    </body>
+</html>

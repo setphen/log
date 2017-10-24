@@ -1,0 +1,83 @@
+body{
+    margin: 4em 1em;
+    font-family: monospace;
+}
+
+#wrap{
+    width:500px;
+    margin:auto;
+}
+
+#header{
+    padding:2em;
+    text-align: center;
+}
+
+.segment{
+    margin-bottom:2em;
+}
+
+.hint{
+    font-size:0.8em;
+    color: #aaa;
+    padding: 0.8em;
+}
+
+#gnomon-logo{
+    width:64px;
+    margin:auto;
+}
+
+#gnomon-title{
+    font-size: 0.8em;
+    padding: 1em;
+    color: #aaa;
+    letter-spacing: 0.1em;
+}
+
+#stats{
+    width:100%;
+    border-collapse: collapse;
+}
+
+#log{
+    width:100%;
+    border-collapse: collapse;
+}
+
+table{
+    margin-bottom: 0.6em;
+    box-shadow: 0 4px 16px #eee;
+}
+
+table tr{
+    border-top: 1px solid lightgray;
+}
+
+table tr:first-child {
+    background-color: #111;
+    color: #eee;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table td{
+    padding:0.5em 1em;
+    border-right: 1px solid lightgray;
+}
+
+table td a:link, table td a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+table td a:link::after, table td a:visited::after{
+    content: "link";
+    text-decoration: underline;
+    vertical-align: super;
+    font-size: 0.6em;
+    color: #1aa0cc;
+    margin-left: 0.5em;
+}
